@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushi Charrón</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sushi Charrón</a>
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="text-white text-center d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Bienvenido a Sushi Charrón</h1>
+      <p class="lead">El mejor sushi japonés con un toque único</p>
+      <a href="#menu" class="btn btn-danger btn-lg">Ver Menú</a>
+    </div>
+  </section>
+
+  <!-- Menú -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestro Menú</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x300/?sushi" class="card-img-top" alt="Sushi">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sushi Clásico</h5>
+              <p class="card-text">Delicioso sushi tradicional japonés.</p>
+              <p class="fw-bold">$8.000 CLP</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x300/?japanese-food" class="card-img-top" alt="Sushi">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sushi Especial</h5>
+              <p class="card-text">Combinación única con ingredientes frescos.</p>
+              <p class="fw-bold">$10.000 CLP</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x300/?asian-food" class="card-img-top" alt="Sushi">
+            <div class="card-body text-center">
+              <h5 class="card-title">Ramen Japonés</h5>
+              <p class="card-text">Caldo artesanal con fideos japoneses.</p>
+              <p class="fw-bold">$9.000 CLP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservas -->
+  <section id="reservas" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Reserva tu Mesa</h2>
+      <form class="mx-auto col-md-6" onsubmit="mostrarMensaje(event)">
+        <div class="mb-3">
+          <label class="form-label">Nombre</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Correo</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Fecha</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Hora</label>
+          <input type="time" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-danger w-100">Reservar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Información del Restaurante -->
+<section id="info-restaurante" class="py-4 bg-light text-center">
+  <div class="container">
+    <h5 class="mb-2">Contáctanos</h5>
+    <p class="mb-1">Teléfono: +56 9 1234 5678</p>
+    <p>Correo: contacto@sushicharron.cl</p>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer id="contacto" class="bg-dark text-white text-center p-4">
+    <p>&copy; 2025 Sushi Charrón - Todos los derechos reservados</p>
+    <div>
+      <a href="#" class="text-white me-3">Facebook</a>
+      <a href="#" class="text-white me-3">Instagram</a>
+      <a href="#" class="text-white">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Script para mensaje -->
+  <script>
+    function mostrarMensaje(event) {
+      event.preventDefault();
+      alert("¡Reserva exitosa! Te esperamos en Sushi Charrón 🍣");
+    }
+  </script>
+</body>
+</html>
