@@ -1,11 +1,11 @@
-/* Navbar */
+
 .navbar {
-  background-color: #c0392b; /* rojo sushi sólido */
+  background-color: #c0392b; 
 }
 
-/* Hero */
+
 #hero {
-  background-color: #f8f9fa; /* gris claro */
+  background-color: #f8f9fa; 
   height: 90vh;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
   box-shadow: 0 0 10px rgba(192, 57, 43, 0.5);
 }
 
-/* Cards menú */
+
 .card {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(192, 57, 43, 0.3);
@@ -49,7 +49,7 @@
   box-shadow: 0 8px 20px rgba(192, 57, 43, 0.4);
 }
 
-/* Sección reservas */
+
 #reservas form {
   background-color: #fff3f2;
   padding: 30px;
@@ -62,15 +62,15 @@
   box-shadow: 0 0 8px rgba(192, 57, 43, 0.5);
 }
 
-/* Footer */
+
 footer {
-  background-color: #34495e; /* gris oscuro sólido */
+  background-color: #34495e; 
   color: #ecf0f1;
   padding: 25px 0;
 }
 
 footer a {
-  color: #f39c12; /* naranja */
+  color: #f39c12; 
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s;
@@ -80,7 +80,7 @@ footer a:hover {
   color: #e74c3c;
 }
 
-/* Títulos de sección */
+
 h2 {
   color: #c0392b;
   font-weight: bold;
@@ -88,8 +88,8 @@ h2 {
 }
 
 #info-restaurante {
-  background-color: #f2f2f2; /* gris claro */
-  color: #c0392b; /* rojo sushi */
+  background-color: #f2f2f2;
+  color: #c0392b; 
 }
 
 #info-restaurante h5 {
